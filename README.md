@@ -6,5 +6,5 @@ targetPort → Backend/Pod port — the port on which the application inside the
 port: 80
 targetPort: 8080
 Client → Service:80 → Pod:8080 → Application
-
 ![Uploading image.png…]()
+
