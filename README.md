@@ -7,6 +7,7 @@ port: 80
 targetPort: 8080
 Client → Service:80 → Pod:8080 → Application
 
-![Uploading image.png…]()
+## If NLB supports TCP/UDP, why can't standard Ingress handle TCP/UDP?"
+"NLB is a Layer-4 load balancer and can handle TCP and UDP. Kubernetes Ingress, however, is a Layer-7 API designed primarily for HTTP/HTTPS routing. When NLB is used with an NGINX Ingress Controller, NLB provides the external Layer-4 entry point, while NGINX handles HTTP/HTTPS Ingress rules. NGINX can also expose TCP/UDP through controller-specific configuration, but those TCP/UDP routes are not defined by the standard Ingress resource."
 
 
