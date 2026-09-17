@@ -14,4 +14,4 @@ Client → Service:80 → Pod:8080 → Application
 Binlog is a MySQL binary log that records database changes such as INSERT, UPDATE, and DELETE. It is commonly used for replication, point-in-time recovery, and change data capture."
 
 ## MYSQL Login 
-mysql -u admin -h <EndPoint> -P 3306   ->>> -p (Small p is password & P capital P is port)
+mysql -u admin -h <EndPoint> -P 3306 -p      ->>> -p (Small p is password & P capital P is port)
